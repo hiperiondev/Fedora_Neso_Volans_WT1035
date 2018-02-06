@@ -1,0 +1,37 @@
+#! /usr/bin/python
+from subprocess import *
+import sys
+import os
+
+if len(sys.argv) != 3:
+    print "Firware extractor.\n"
+    print "Requires elf file (driver) argument and search string"
+    sys.exit(1)
+
+filename = sys.argv[1]
+search_string = sys.argv[2]
+
+p = Popen(['/bin/sh', '-c', 'readelf -S '+ filename + ' | grep \ \.rodata\ | sed \'s/\\[ *//g\''], stdout=PIPE)
+
+args = p.stdout.readlines()
+
+if len(args) != 1:
+    print "No simple .rodata section found"
+    sys.exit(1)
+
+rodata = args[0]
+
+args = rodata.split(']')
+args = args[1].split()
+
+offset = int(args[3], 16)
+
+print ".rodata offset is ", offset, "\n"
+
+p = Popen(['/bin/sh', '-c', 'readelf -s -W '+ filename +' | grep -i '+search_string], stdout=PIPE)
+
+for line in p.stdout:
+    args = line.split()
+
+    print "Found", args[7], "offset", offset + int(args[1],16), "count", args[2]
+    call(['dd','if='+filename,'bs=1','count='+args[2], 'skip='+str(offset + int(args[1],16)),'of='+args[7] + ".fw"])
