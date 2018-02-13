@@ -54,6 +54,7 @@ Legend :
  3. Camera
  4. Accelerometer
  5. Touchscreen
+ 6. Rotate Screen
 
 ----------------------------------------
 
@@ -119,3 +120,5 @@ In this example the FW file is: I101_GSL3692_8001280_GG_FC_FC101S123
     - Create fw with tools (from: https://github.com/onitake/gsl-firmware)
 	fwtool -c I101_GSL3692_8001280_GG_FC_FC101S123.fw -w 1500 -h 2000 -t 10 -f track,swap,xflip silead_ts.fw
 
+6. Rotate Screen
+    [...]
