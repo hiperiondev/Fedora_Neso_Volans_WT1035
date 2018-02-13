@@ -34,7 +34,6 @@
 * Switch to External Screen (HDMI)
 + Mouse Built-in (Touchscreen)
 - Bluetooth
-* Keyboard's Hotkeys
 + Wireless/Wifi
 + Sound
 * MicroSD card reader
