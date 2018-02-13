@@ -13,31 +13,44 @@
 # Configure these to match your hardware (names taken from `xinput` output).
 TOUCHSCREEN='Silead GSLx680 Touchscreen'
 
-if [ -z "$1" ]; then
-  echo "Missing orientation."
-  echo "Usage: $0 [normal|inverted|left|right] [revert_seconds]"
-  echo
-  exit 1
+# Create Pipe
+pipe=/tmp/rotatepipe
+trap "rm -f $pipe" EXIT
+if [[ ! -p $pipe ]]; then
+    mkfifo $pipe
 fi
+
+#Start Accelerator Monitor
+monitor-sensor >> /tmp/rotatepipe 2>&1 &
+
+# Read position change
+while true
+do
+if read line < $pipe; then
+
+DIRECTION=$(echo $line|grep 'Accelerometer orientation changed'|awk '{print $4}')
 
 function do_rotate
 {
-  xrandr --output $1 --rotate $2
 
   TRANSFORM='Coordinate Transformation Matrix'
 
   case "$2" in
-    normal)
+    left-up)
       [ ! -z "$TOUCHSCREEN" ] && xinput set-prop "$TOUCHSCREEN" "$TRANSFORM" 1 0 0 0 1 0 0 0 1
+      xrandr --output $1 --rotate normal
       ;;
-    inverted)
+    right-up)
       [ ! -z "$TOUCHSCREEN" ] && xinput set-prop "$TOUCHSCREEN" "$TRANSFORM" -1 0 1 0 -1 1 0 0 1
+      xrandr --output $1 --rotate inverted
       ;;
-    left)
+    bottom-up)
       [ ! -z "$TOUCHSCREEN" ] && xinput set-prop "$TOUCHSCREEN" "$TRANSFORM" 0 -1 1 1 0 0 0 0 1
+      xrandr --output $1 --rotate left
       ;;
-    right)
+    normal)
       [ ! -z "$TOUCHSCREEN" ] && xinput set-prop "$TOUCHSCREEN" "$TRANSFORM" 0 1 0 -1 0 1 0 0 1
+      xrandr --output $1 --rotate right
       ;;
   esac
 }
@@ -45,10 +58,8 @@ function do_rotate
 XDISPLAY=`xrandr --current | grep primary | sed -e 's/ .*//g'`
 XROT=`xrandr --current --verbose | grep primary | egrep -o ' (normal|left|inverted|right) '`
 
-do_rotate $XDISPLAY $1
+do_rotate $XDISPLAY $DIRECTION
 
-if [ ! -z "$2" ]; then
-  sleep $2
-  do_rotate $XDISPLAY $XROT
-  exit 0
 fi
+done
+
