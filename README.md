@@ -27,7 +27,7 @@
 + Sleep / Suspend
 + Battery monitor
 + Xorg & XWayland
-*     OpenGL
++     OpenGL (60FPS on glxgears)
 +     Resize-and-Rotate(randr)
 + Screen backlight
 * Light sensor
