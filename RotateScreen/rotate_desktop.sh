@@ -1,4 +1,4 @@
-OD#!/bin/bash
+#!/bin/bash
 #
 # rotate_desktop.sh
 #
