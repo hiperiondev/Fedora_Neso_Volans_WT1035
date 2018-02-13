@@ -120,4 +120,4 @@ In this example the FW file is: I101_GSL3692_8001280_GG_FC_FC101S123
 	fwtool -c I101_GSL3692_8001280_GG_FC_FC101S123.fw -w 1500 -h 2000 -t 10 -f track,swap,xflip silead_ts.fw
 
 6. Rotate Screen
-    - Use RotateScreen/rotate_desktop.sh script (modified from: https://gist.github.com/mildmojo/48e9025070a2ba40795c)
+- Use RotateScreen/rotate_desktop.sh script (modified from: https://gist.github.com/mildmojo/48e9025070a2ba40795c)
