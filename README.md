@@ -26,9 +26,10 @@
 * Hibernation
 + Sleep / Suspend
 + Battery monitor
-+ Xorg & XWayland
++ Xorg
 +     OpenGL (60FPS on glxgears)
 +     Resize-and-Rotate(randr)
+* XWayland
 + Screen backlight
 * Light sensor
 * Switch to External Screen (HDMI)
