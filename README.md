@@ -36,7 +36,7 @@
 - Bluetooth
 + Wireless/Wifi
 + Sound
-* MicroSD card reader
++ MicroSD card reader
 - Built-in camera
 + Accelerometers
 ```
