@@ -63,7 +63,7 @@ Legend :
 1. *Install Fedora 27*
   - Install F27 fron USB
   - [...]
-  - Use kernel 4.15.0-1.fc28 fron rawhide repo
+  - Use kernel 4.15.0-1.fc28 from rawhide repo
 
 2. *Bluetooth*
   - Not work. Problem with ACPI ID and rfkill-gpio. Possible solution: https://patchwork.kernel.org/patch/9831445/
