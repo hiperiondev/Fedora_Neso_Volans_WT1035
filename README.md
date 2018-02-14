@@ -40,6 +40,7 @@
 + MicroSD card reader
 - Built-in camera
 + Accelerometers
+* Side connector
 ```
 ```diff
 Legend : 
@@ -55,6 +56,7 @@ Legend :
  4. Accelerometer
  5. Touchscreen
  6. Rotate Screen
+ 7. Side connector
 
 ----------------------------------------
 
@@ -122,3 +124,6 @@ In this example the FW file is: I101_GSL3692_8001280_GG_FC_FC101S123
 
 6. Rotate Screen
 - Use RotateScreen/rotate_desktop.sh script (modified from: https://gist.github.com/mildmojo/48e9025070a2ba40795c)
+
+7. Side connector
+- USB OTG ?
