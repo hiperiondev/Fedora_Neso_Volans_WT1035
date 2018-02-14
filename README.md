@@ -50,30 +50,30 @@ Legend :
 ```
 
 
- 1. Install Fedora 27
- 2. Bluetooth
- 3. Camera
- 4. Accelerometer
- 5. Touchscreen
- 6. Rotate Screen
- 7. Side connector
+ 1. *Install Fedora 27*
+ 2. *Bluetooth*
+ 3. *Camera*
+ 4. *Accelerometer*
+ 5. *Touchscreen*
+ 6. *Rotate Screen*
+ 7. *Side connector*
 
 ----------------------------------------
 
-1. Install Fedora 27
+1. *Install Fedora 27*
     [...]
 
-2. Bluetooth
+2. *Bluetooth*
     [...]
 
-3. Camera
+3. *Camera*
     [...]
 
-4. Accelerometer
+4. *Accelerometer*
   - In kernel module bmc150_accel_i2c.
   - Ok iio-sensor-proxy
 
-5. Touchscreen
+5. *Touchscreen*
 
   - Copy Firmware file Firmware/silead_ts.fw to /lib/firmware
   - Compile this trivial modified version of gslx680_acpi (from: https://github.com/onitake/gslx680-acpi)
@@ -123,8 +123,8 @@ In this example the FW file is: I101_GSL3692_8001280_GG_FC_FC101S123
     - Create fw with tools (from: https://github.com/onitake/gsl-firmware)
 	fwtool -c I101_GSL3692_8001280_GG_FC_FC101S123.fw -w 1500 -h 2000 -t 10 -f track,swap,xflip silead_ts.fw
 
-6. Rotate Screen
+6. *Rotate Screen*
 - Use RotateScreen/rotate_desktop.sh script (modified from: https://gist.github.com/mildmojo/48e9025070a2ba40795c)
 
-7. Side connector
+7. *Side connector*
 - USB OTG ?
