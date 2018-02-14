@@ -61,7 +61,7 @@ Legend :
 ----------------------------------------
 
 1. *Install Fedora 27*
-  - Install F27 fron USB
+  - Install F27 from USB
   - [...]
   - Use kernel 4.15.0-1.fc28 from rawhide repo
 
