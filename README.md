@@ -70,7 +70,8 @@ Legend :
     [...]
 
 4. Accelerometer
-    In kernel module bmc150_accel_i2c. Ok iio-sensor-proxy
+  - In kernel module bmc150_accel_i2c.
+  - Ok iio-sensor-proxy
 
 5. Touchscreen
 
