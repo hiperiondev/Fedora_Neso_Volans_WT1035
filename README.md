@@ -78,8 +78,15 @@ Legend :
 5. *Touchscreen*
 
    *NATIVE*
-  
-   *OLD (NOT RECOMENDED)*
+  - From touchscreen-native:
+   - Copy mssl1680.fw to /lib/firmware/silead
+   - Copy dsdt.aml to /boot
+   - Copy 01-silead.conf to /etc/X11/xorg.conf.d
+   - Copy 01_acpi to /etc/grub.d and make executable
+   - Reconstruct grub.conf: grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+   - Reboot
+   
+    *OLD (NOT RECOMENDED)*
   - Copy Firmware file Firmware/silead_ts.fw to /lib/firmware
   - Compile this trivial modified version of gslx680_acpi (from: https://github.com/onitake/gslx680-acpi)
    - Sign kernel module: https://blog.delouw.ch/2017/04/18/signing-linux-kernel-kodules-and-enforce-to-load-only-signed-modules/ 
