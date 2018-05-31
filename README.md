@@ -77,6 +77,9 @@ Legend :
 
 5. *Touchscreen*
 
+   *NATIVE*
+  
+   *OLD (NOT RECOMENDED)*
   - Copy Firmware file Firmware/silead_ts.fw to /lib/firmware
   - Compile this trivial modified version of gslx680_acpi (from: https://github.com/onitake/gslx680-acpi)
    - Sign kernel module: https://blog.delouw.ch/2017/04/18/signing-linux-kernel-kodules-and-enforce-to-load-only-signed-modules/ 
