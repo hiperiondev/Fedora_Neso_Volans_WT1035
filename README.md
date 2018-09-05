@@ -1,5 +1,5 @@
 # Fedora_Neso_Volans_WT1035
-*Install Fedora 27/28 on Tablet Neso Volans WT1035*
+*Install Fedora 28 on Tablet Neso Volans WT1035*
 
 ## System Hardware Summary
 
@@ -34,7 +34,7 @@
 * Light sensor
 * Switch to External Screen (HDMI)
 + Mouse Built-in (Touchscreen)
-- Bluetooth
++ Bluetooth
 + Wireless/Wifi
 + Sound
 + MicroSD card reader
@@ -50,7 +50,7 @@ Legend :
 ```
 
 
- 1. *Install Fedora 27*
+ 1. *Install Fedora 28*
  2. *Bluetooth*
  3. *Camera*
  4. *Accelerometer*
@@ -60,13 +60,13 @@ Legend :
 
 ----------------------------------------
 
-1. *Install Fedora 27*
-  - Install F27 from USB
+1. *Install Fedora 28*
+  - Install F28 from USB
   - [...]
-  - Use kernel 4.16.0-0.rc3.git2.2.fc29 from rawhide repo
+  - Use kernel 4.19.0-0.rc1.git3.2.fc30.x86_64 from rawhide repo
 
 2. *Bluetooth*
-  - Not work. Problem with ACPI ID and rfkill-gpio. Possible solution: https://patchwork.kernel.org/patch/9831445/
+  - Copy Firmware/rtl_bt to /lib/firmware/
 
 3. *Camera*
   - Not work. Not idetified yet
