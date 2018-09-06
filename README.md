@@ -68,8 +68,10 @@ Legend :
 2. *Bluetooth / WIFI*
   - Copy Firmware/rtl_bt to /lib/firmware/
   - Add: 
+  ```
   echo "options r8723bs ant_sel=2"  >  /etc/modprobe.d/r8723bs.conf
   echo "options rtl8723bs ant_sel=2"  >  /etc/modprobe.d/rtl8723bs.conf
+  ```
 
 3. *Camera*
   - Not work. Not idetified yet
