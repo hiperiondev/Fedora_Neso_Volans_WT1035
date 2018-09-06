@@ -51,7 +51,7 @@ Legend :
 
 
  1. *Install Fedora 28*
- 2. *Bluetooth*
+ 2. *Bluetooth / WIFI*
  3. *Camera*
  4. *Accelerometer*
  5. *Touchscreen*
@@ -65,8 +65,11 @@ Legend :
   - [...]
   - Use kernel 4.19.0-0.rc1.git3.2.fc30.x86_64 from rawhide repo
 
-2. *Bluetooth*
+2. *Bluetooth / WIFI*
   - Copy Firmware/rtl_bt to /lib/firmware/
+  - Add: 
+  echo "options r8723bs ant_sel=2"  >  /etc/modprobe.d/r8723bs.conf
+  echo "options rtl8723bs ant_sel=2"  >  /etc/modprobe.d/rtl8723bs.conf
 
 3. *Camera*
   - Not work. Not idetified yet
