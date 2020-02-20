@@ -1,5 +1,5 @@
 # Fedora_Neso_Volans_WT1035
-*Install Fedora 28 on Tablet Neso Volans WT1035*
+*Install Fedora 31 on Tablet Neso Volans WT1035*
 
 ## System Hardware Summary
 
