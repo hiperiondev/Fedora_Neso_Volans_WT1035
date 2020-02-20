@@ -50,7 +50,7 @@ Legend :
 ```
 
 
- 1. *Install Fedora 28*
+ 1. *Install Fedora 31*
  2. *Bluetooth / WIFI*
  3. *Camera*
  4. *Accelerometer*
@@ -61,9 +61,7 @@ Legend :
 ----------------------------------------
 
 1. *Install Fedora 28*
-  - Install F28 from USB
-  - [...]
-  - Use kernel 4.19.0-0.rc1.git3.2.fc30.x86_64 from rawhide repo
+  - Install 31 from USB
 
 2. *Bluetooth / WIFI*
   - Copy Firmware/rtl_bt to /lib/firmware/
