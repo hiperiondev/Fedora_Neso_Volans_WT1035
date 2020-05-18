@@ -60,7 +60,7 @@ Legend :
 
 ----------------------------------------
 
-1. *Install Fedora 28*
+1. *Install Fedora 31*
   - Install 31 from USB
 
 2. *Bluetooth / WIFI*
