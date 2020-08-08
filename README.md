@@ -1,5 +1,5 @@
 # Fedora_Neso_Volans_WT1035
-*Install Fedora 31 on Tablet Neso Volans WT1035*
+*Install Fedora 32 on Tablet Neso Volans WT1035*
 
 ## System Hardware Summary
 
@@ -50,7 +50,7 @@ Legend :
 ```
 
 
- 1. *Install Fedora 31*
+ 1. *Install Fedora 32*
  2. *Bluetooth / WIFI*
  3. *Camera*
  4. *Accelerometer*
@@ -60,8 +60,8 @@ Legend :
 
 ----------------------------------------
 
-1. *Install Fedora 31*
-  - Install 31 from USB
+1. *Install Fedora 32*
+  - Install 32 from USB
 
 2. *Bluetooth / WIFI*
   - Copy Firmware/rtl_bt to /lib/firmware/
