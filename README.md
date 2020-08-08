@@ -77,16 +77,16 @@ Legend :
 
    *NATIVE evdev*
   - From touchscreen-native:
-   - 1- Copy mssl1680.fw to /lib/firmware/silead
-   - 2- Copy dsdt.aml to /boot
-   - 3- Copy 01-silead.conf to /etc/X11/xorg.conf.d
-   - 4- Copy 01_acpi to /etc/grub.d and make executable
-   - 5- Reconstruct grub.conf: grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
-   - 6- Reboot
+   - 1 - Copy mssl1680.fw to /lib/firmware/silead
+   - 2 - Copy dsdt.aml to /boot
+   - 3 - Copy 01-silead.conf to /etc/X11/xorg.conf.d
+   - 4 - Copy 01_acpi to /etc/grub.d and make executable
+   - 5 - Reconstruct grub.conf: grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+   - 6 - Reboot
    
-   *NATIVE libinput"
-    idem evdev but:
-    - 3- Copy 99-calibration.conf to /etc/X11/xorg.conf.d
+   *NATIVE libinput*
+  - Idem evdev but:
+   - 3 - Copy 99-calibration.conf to /etc/X11/xorg.conf.d
    
     *OLD (NOT RECOMENDED)*
   - Copy Firmware file Firmware/silead_ts.fw to /lib/firmware
