@@ -196,6 +196,6 @@ From: Table of ACPI/PNP _HID/_CID values (Intel Corp)
 {"INBC0000",    "GPIO Expander"}
 {"TBQ24296",    "Charger"}
 {"10EC5640",    "Realtek I2S Audio Codec"}
-MSSL1680 ???
+MSSL1680: silead mssl1680 touchscreen (Working)
 VBUS8622 ???
 ```
