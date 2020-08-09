@@ -187,3 +187,12 @@ find /sys/devices/platform -name name -printf "%p\t" -exec cat {} \;
 /sys/devices/platform/80860F41:03/i2c-3/i2c-VBUS8622:00/name    VBUS8622:00
 /sys/devices/platform/80860F41:01/i2c-1/i2c-10EC5640:00/name    10EC5640:00
 ```
+From: Table of ACPI/PNP _HID/_CID values (Intel Corp)
+{"SMB0349",     "Charger"}
+{"SMSC3750",    "SMSC 3750 USB MUX"}
+{"MAX17047",    "Fuel Gauge Controller"}
+{"INBC0000",    "GPIO Expander"}
+{"TBQ24296",    "Charger"}
+{"10EC5640",    "Realtek I2S Audio Codec"}
+MSSL1680 ???
+VBUS8622 ???
