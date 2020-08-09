@@ -58,6 +58,7 @@ Legend :
  6. *Rotate Screen*
  7. *Side connector*
  8. *VA-API
+ 9. *Others
 
 ----------------------------------------
 
@@ -171,4 +172,8 @@ vainfo: Supported profile and entrypoints
       VAProfileJPEGBaseline           : VAEntrypointVLD
 
 ```
-
+9. *Others*
+- Identify ACPI devices which are not handled by the kernel : their name is not overriden by a human-friendly name.
+```
+find /sys/devices/platform -name name -printf "%p\t" -exec cat {} \;
+```
