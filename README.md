@@ -1,10 +1,6 @@
 # Fedora_Neso_Volans_WT1035
 *Install Fedora 32 on Tablet Neso Volans WT1035*
 
-## System Hardware Summary
-
-**[Neso Volans WT1035 10.1"] (https://www.intel.la/buy/ar/es/product/tablets/neso-volans-32gb-black-508088)**
-
 ## Hardware
 
 ```
@@ -13,7 +9,7 @@
 - Screen: 10.1"
 - WiFi: Realtek RTL8723BS Wireless LAN 80211n SDIO Network Adapter
 - Disks: mmcblk0: mmc0:0001 NCard 28.9 GiB
-- RAM: LPDDR3 1067 2GB (on-board)*
+- RAM: LPDDR3 1067 2GB (on-board)
 - BT: Realtek RTL8723BS_BT
 - Camera: Unknown (maybe ov2680 and other)
 ```
