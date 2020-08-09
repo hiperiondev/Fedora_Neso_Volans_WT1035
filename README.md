@@ -179,6 +179,7 @@ Works but saturate.
 
 10. *Others*
 - Identify ACPI devices which are not handled by the kernel : their name is not overriden by a human-friendly name.
+Some works with drivers
 
 find /sys/devices/platform -name name -printf "%p\t" -exec cat {} \;
 ```
@@ -194,18 +195,13 @@ find /sys/devices/platform -name name -printf "%p\t" -exec cat {} \;
 ```
 ``` diff
 From: Table of ACPI/PNP _HID/_CID values (Intel Corp)
--{"INT0002",     "Virtual GPIO Controller"}
--{"SMB0349",     "Charger"}
--{"SMSC3750",    "SMSC 3750 USB MUX"}
-+{"MAX17047",    "Fuel Gauge Controller"}
--{"INBC0000",    "GPIO Expander"}
--{"TBQ24296",    "Charger"}
--{"10EC5640",    "Realtek I2S Audio Codec"}
-+MSSL1680: silead mssl1680 touchscreen
--VBUS8622 ??? (Maybe camera)
-`
-```diff``
-Legend : 
-+ xxx = OK
-- xxx = Not work (maybe Unsupported)
+{"INT0002",     "Virtual GPIO Controller"}
+{"SMB0349",     "Charger"}
+{"SMSC3750",    "SMSC 3750 USB MUX"}
+{"MAX17047",    "Fuel Gauge Controller"}
+{"INBC0000",    "GPIO Expander"}
+"TBQ24296",    "Charger"}
+{"10EC5640",    "Realtek I2S Audio Codec"}
+MSSL1680: silead mssl1680 touchscreen
+VBUS8622 ??? (Maybe camera)
 ```
