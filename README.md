@@ -15,6 +15,7 @@
 - Disks: mmcblk0: mmc0:0001 NCard 28.9 GiB
 - RAM: LPDDR3 1067 2GB (on-board)*
 - BT: Realtek RTL8723BS_BT
+- Camera: Unknown (maybe ov2680 and other)
 ```
 
 ## Project Status
@@ -197,5 +198,5 @@ From: Table of ACPI/PNP _HID/_CID values (Intel Corp)
 {"TBQ24296",    "Charger"}
 {"10EC5640",    "Realtek I2S Audio Codec"}
 MSSL1680: silead mssl1680 touchscreen (Working)
-VBUS8622 ???
+VBUS8622 ??? (Maybe camera)
 ```
