@@ -57,6 +57,7 @@ Legend :
  5. *Touchscreen*
  6. *Rotate Screen*
  7. *Side connector*
+ 8. *VA-API
 
 ----------------------------------------
 
@@ -142,3 +143,30 @@ In this example the FW file is: I101_GSL3692_8001280_GG_FC_FC101S123
 
 7. *Side connector*
 - USB OTG ?
+
+8. *VA-API*
+- dnf install libva libva-intel-driver libva-intel-hybrid-driver libva-utils libva-v4l2-request libva-vdpau-driver
+
+```
+vainfo: VA-API version: 1.7 (libva 2.7.0.pre1)
+vainfo: Driver version: Intel i965 driver for Intel(R) Bay Trail - 2.4.1
+vainfo: Supported profile and entrypoints
+      VAProfileMPEG2Simple            : VAEntrypointVLD
+      VAProfileMPEG2Simple            : VAEntrypointEncSlice
+      VAProfileMPEG2Main              : VAEntrypointVLD
+      VAProfileMPEG2Main              : VAEntrypointEncSlice
+      VAProfileH264ConstrainedBaseline: VAEntrypointVLD
+      VAProfileH264ConstrainedBaseline: VAEntrypointEncSlice
+      VAProfileH264Main               : VAEntrypointVLD
+      VAProfileH264Main               : VAEntrypointEncSlice
+      VAProfileH264High               : VAEntrypointVLD
+      VAProfileH264High               : VAEntrypointEncSlice
+      VAProfileH264StereoHigh         : VAEntrypointVLD
+      VAProfileVC1Simple              : VAEntrypointVLD
+      VAProfileVC1Main                : VAEntrypointVLD
+      VAProfileVC1Advanced            : VAEntrypointVLD
+      VAProfileNone                   : VAEntrypointVideoProc
+      VAProfileJPEGBaseline           : VAEntrypointVLD
+
+```
+
