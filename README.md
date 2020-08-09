@@ -174,6 +174,16 @@ vainfo: Supported profile and entrypoints
 ```
 9. *Others*
 - Identify ACPI devices which are not handled by the kernel : their name is not overriden by a human-friendly name.
-```
+
 find /sys/devices/platform -name name -printf "%p\t" -exec cat {} \;
+```
+/sys/devices/platform/INT0002:00/wakeup/wakeup20/name           INT0002:00
+/sys/devices/platform/80860F41:00/i2c-0/i2c-SMB0349:00/name     SMB0349:00
+/sys/devices/platform/80860F41:00/i2c-0/i2c-SMSC3750:00/name    SMSC3750:00
+/sys/devices/platform/80860F41:00/i2c-0/i2c-MAX17047:00/name    MAX17047:00
+/sys/devices/platform/80860F41:00/i2c-0/i2c-INBC0000:00/name    INBC0000:00
+/sys/devices/platform/80860F41:00/i2c-0/i2c-TBQ24296:00/name    TBQ24296:00
+/sys/devices/platform/80860F41:03/i2c-3/i2c-MSSL1680:00/name    MSSL1680:00
+/sys/devices/platform/80860F41:03/i2c-3/i2c-VBUS8622:00/name    VBUS8622:00
+/sys/devices/platform/80860F41:01/i2c-1/i2c-10EC5640:00/name    10EC5640:00
 ```
