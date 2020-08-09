@@ -11,7 +11,7 @@
 - Disks: mmcblk0: mmc0:0001 NCard 28.9 GiB
 - RAM: LPDDR3 1067 2GB (on-board)
 - BT: Realtek RTL8723BS_BT
-- Camera: Unknown (maybe ov2680 and other)
+- Camera: Unknown (maybe gc0310 and ov2680 )
 ```
 
 ## Project Status
