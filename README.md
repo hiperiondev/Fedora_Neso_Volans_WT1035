@@ -83,6 +83,8 @@ Legend :
    - 3 - Copy 01-silead.conf to /etc/X11/xorg.conf.d
    - 4 - Copy 01_acpi to /etc/grub.d and make executable
    - 5 - Reconstruct grub.conf: grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+   (if fail with /usr/bin/grub2-editenv: error: invalid environment block. use: grub2-editenv /boot/efi/EFI/fedora/grubenv create
+)
    - 6 - Reboot
    
    *NATIVE libinput*
