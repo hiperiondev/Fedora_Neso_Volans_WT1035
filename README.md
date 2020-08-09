@@ -200,7 +200,7 @@ From: Table of ACPI/PNP _HID/_CID values (Intel Corp)
 {"SMSC3750",    "SMSC 3750 USB MUX"}
 {"MAX17047",    "Fuel Gauge Controller"}
 {"INBC0000",    "GPIO Expander"}
-"TBQ24296",    "Charger"}
+{"TBQ24296",    "Charger"}
 {"10EC5640",    "Realtek I2S Audio Codec"}
 MSSL1680: silead mssl1680 touchscreen
 VBUS8622 ??? (Maybe camera)
