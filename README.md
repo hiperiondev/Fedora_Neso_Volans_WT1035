@@ -205,3 +205,9 @@ From: Table of ACPI/PNP _HID/_CID values (Intel Corp)
 MSSL1680: silead mssl1680 touchscreen
 VBUS8622 ??? (Maybe camera)
 ```
+
+10. *Troubleshooting*
+If use new kernels may be boots on black screen. Try this flags on kernel:
+```
+efi=debug earlyprintk=efi,keep
+```
