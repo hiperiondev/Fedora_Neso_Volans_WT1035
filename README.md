@@ -54,9 +54,9 @@ Legend :
  5. *Touchscreen*
  6. *Rotate Screen*
  7. *Side connector*
- 8. *VA-API
+ 8. *VA-API*
  9. *Sound*
- 10. *Others
+ 10. *Others*
  11. *Troubleshooting*
 
 ----------------------------------------
@@ -208,7 +208,7 @@ VBUS8622 ??? (Maybe camera)
 ```
 
 11. *Troubleshooting*
-If use new kernels may be boots on black screen. Try this flags on kernel:
+- If use new kernels may be boots on black screen. Try this flags on kernel:
 ```
 efi=debug earlyprintk=efi,keep
 ```
