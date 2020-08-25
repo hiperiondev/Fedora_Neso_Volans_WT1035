@@ -57,6 +57,7 @@ Legend :
  8. *VA-API
  9. *Sound*
  10. *Others
+ 11. *Troubleshooting*
 
 ----------------------------------------
 
@@ -206,7 +207,7 @@ MSSL1680: silead mssl1680 touchscreen
 VBUS8622 ??? (Maybe camera)
 ```
 
-10. *Troubleshooting*
+11. *Troubleshooting*
 If use new kernels may be boots on black screen. Try this flags on kernel:
 ```
 efi=debug earlyprintk=efi,keep
