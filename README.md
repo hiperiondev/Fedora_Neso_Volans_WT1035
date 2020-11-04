@@ -43,7 +43,7 @@
 Legend : 
 + xxx = OK
 - xxx = Not work (maybe Unsupported)
-* xxx = Unknown, Not Test
+* xxx = Unknown, Not Tested
 ```
 
 
