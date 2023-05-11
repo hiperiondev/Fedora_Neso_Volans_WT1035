@@ -47,7 +47,7 @@ Legend :
 ```
 
 
- 1. *Install Fedora 32*
+ 1. *Install Fedora 38*
  2. *Bluetooth / WIFI*
  3. *Camera*
  4. *Accelerometer*
@@ -61,8 +61,8 @@ Legend :
 
 ----------------------------------------
 
-1. *Install Fedora 32*
-  - Install 32 from USB
+1. *Install Fedora 38*
+  - Install 38 from USB
 
 2. *Bluetooth / WIFI*
   - Copy Firmware/rtl_bt to /lib/firmware/
@@ -147,7 +147,7 @@ In this example the FW file is: I101_GSL3692_8001280_GG_FC_FC101S123
 - USB OTG ?
 
 8. *VA-API*
-- dnf install libva libva-intel-driver libva-intel-hybrid-driver libva-utils libva-v4l2-request libva-vdpau-driver
+-  libva-intel-driver libva-intel-hybrid-driver libva-utils libva-v4l2-request libva-vdpau-driver
 
 ```
 vainfo: VA-API version: 1.7 (libva 2.7.0.pre1)
