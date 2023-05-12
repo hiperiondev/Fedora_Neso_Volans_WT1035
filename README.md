@@ -76,7 +76,7 @@ Legend :
 
 5. *Touchscreen*
 
-   *NATIVE evdev*
+   *NATIVE evdev (WORKS ON WAYLAND)*
   - From touchscreen-native:
    - 1 - Copy mssl1680.fw to /lib/firmware/silead
    - 2 - Copy dsdt.aml to /boot
