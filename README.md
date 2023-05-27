@@ -65,6 +65,8 @@ Legend :
   - Install 38 from USB
 
 2. *Bluetooth / WIFI*
+
+*OLD (NOT RECOMENDED)*
   - Copy Firmware/rtl_bt to /lib/firmware/
 
 3. *Camera*
